@@ -393,7 +393,8 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 50%;
+      align-content: center;
+  
   }
 }
 /* Vision & Mission Section */
