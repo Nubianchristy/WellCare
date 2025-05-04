@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellcare</title>
+  <link rel="stylesheet" href="wellcare.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Wellcare</div>
+      <nav class="nav" id="navbar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">How it Works</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Care that Connects, Wherever You Are</h1>
+      <p>Empowering families to support loved ones in Nigeria with trusted healthcare — fast, easy, and personal.</p>
+      <button class="btn-primary">
+        <a href="wellcare signup.html">Get Started</a>
+      </button>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Instant Booking</h3>
+        <p>Book verified health providers with just a few taps, no long forms or delays.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Flexible Payment</h3>
+        <p>Pay for care through secure remittances or locally, based on your preference.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Live Updates</h3>
+        <p>Stay informed in real-time as your loved one receives care at home or facility.</p>
+      </div>
+    </section>
+
+    <section class="care-gallery">
+      <h2>Real People. Real Care.</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="elder1.jpg" alt="Elderly woman being cared for" />
+          <p>Comfort and dignity at every step.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="elder2.jpg" alt="Caregiver with elderly man" />
+          <p>Supportive, trusted professionals.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="elder3.jpg" alt="Happy elderly couple" />
+          <p>Peace of mind for families abroad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <p>“Wellacare helped me organize care for my mom within minutes. The updates gave me peace of mind.”</p>
+        <strong>— Chika, London</strong>
+      </div>
+      <div class="testimonial">
+        <p>“The simplicity and trust of the process makes it so easy to use from anywhere.”</p>
+        <strong>— Samuel, Abuja</strong>
+      </div>
+    </section>
+
+    <section class="login-section">
+      <h2>Login to Your Account</h2>
+      <form class="login-form" action="/login" method="post">
+        <input type="email" name="email" placeholder="Email address" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <h2>Need to Talk to Us?</h2>
+      <p>We're just a message away. Let us help you find the right care for your loved ones.</p>
+      <button class="btn-primary">Contact Us</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wellacare. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle menu for mobile
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('navbar').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
