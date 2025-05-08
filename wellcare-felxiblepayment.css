@@ -1,0 +1,120 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FAF9F6;
+    color: #333;
+  }
+  
+  /* Section Wrapper */
+  .flexible-payment {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fp-container {
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  /* Headings */
+  .fp-container h2 {
+    color: #004E5F;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .fp-container p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  /* Form Elements */
+  .fp-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+  }
+  
+  .fp-form input[type="number"],
+  .fp-form input[type="text"],
+  .fp-form input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .fp-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .fp-option input {
+    margin-right: 0.6rem;
+    accent-color: #004E5F;
+  }
+  
+  .fp-option label {
+    font-size: 1rem;
+    color: #004E5F;
+  }
+  
+  /* Hide both detail blocks by default */
+  .remittance-details,
+  .local-details {
+    display: none;
+  }
+  
+  /* Proceed Button */
+  .fp-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #004E5F;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fp-submit:hover {
+    background-color: #006c81;
+    transform: scale(1.02);
+  }
+  
+  /* Show details when option checked */
+  #remittance:checked ~ .remittance-details {
+    display: block;
+  }
+  
+  #local:checked ~ .local-details {
+    display: block;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .fp-container {
+      padding: 1.5rem;
+    }
+  
+    .fp-submit {
+      font-size: 0.95rem;
+    }
+  }
+   

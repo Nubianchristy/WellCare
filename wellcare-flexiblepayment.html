@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wellcare – Flexible Payment</title>
+  <link rel="stylesheet" href="wellcare-felxiblepayment.css" />
+</head>
+<body>
+
+  <section class="flexible-payment">
+    <div class="fp-container">
+      <h2>Flexible Payment</h2>
+      <p>Select your preferred payment method and enter the details below.</p>
+
+      <!-- Form now points to wellcare-payment.html -->
+      <form class="fp-form" action="wellcare-payment.html" method="get">
+        <div class="fp-option">
+          <input type="radio" id="remittance" name="paymentMethod" value="remittance" checked>
+          <label for="remittance">International Remittance</label>
+        </div>
+        <div class="fp-option">
+          <input type="radio" id="local" name="paymentMethod" value="local">
+          <label for="local">Local Payment (Mobile Money/Cash)</label>
+        </div>
+
+        <label for="amount">Amount (₦)</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+        <div class="fp-details remittance-details">
+          <label for="bank-details">Bank Details / SWIFT Code</label>
+          <input type="text" id="bank-details" name="bankDetails" placeholder="e.g. ABCDNG22XXX" />
+        </div>
+
+        <div class="fp-details local-details">
+          <label for="mobile-number">Mobile Money Number</label>
+          <input type="tel" id="mobile-number" name="mobileNumber" placeholder="+2348012345678" />
+        </div>
+
+        <!-- This will navigate to payment.html -->
+        <button type="submit" class="fp-submit">Proceed to Pay</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
+

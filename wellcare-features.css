@@ -1,0 +1,22 @@
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    width: 100%;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+  }
+  
+  .feature-card:focus {
+    outline: 2px solid #f5d090;
+    outline-offset: 4px;
+  }
+  

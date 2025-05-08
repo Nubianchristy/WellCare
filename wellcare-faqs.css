@@ -1,0 +1,86 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    background-color: #FAF9F6;
+    padding: 4rem 2rem;
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    color: #004E5F;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  /* Container */
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Individual FAQ items */
+  .faq-container details {
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  .faq-container details[open] {
+    background: #F3D9B1;
+  }
+  
+  .faq-container summary {
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    padding-right: 2rem;
+    list-style: none;
+  }
+  
+  /* remove default marker */
+  .faq-container summary::marker {
+    display: none;
+  }
+  
+  /* custom expand/collapse icon */
+  .faq-container summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-container details[open] summary::after {
+    content: '–';
+  }
+  
+  /* Answer text */
+  .faq-container p {
+    margin-top: 0.5rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .faq-section {
+      padding: 3rem 1rem;
+    }
+    .faq-section h2 {
+      font-size: 1.75rem;
+    }
+    .faq-container details {
+      padding: 0.75rem 1rem;
+    }
+  }
+  

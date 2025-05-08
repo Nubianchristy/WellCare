@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wellcare – Contact Us</title>
+  <link rel="stylesheet" href="wellcare-contactus.css"/>
+</head>
+<body>
+  <section class="contact-us">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or need assistance? Send us a message and we'll get back to you as soon as possible.</p>
+      <form action="/submit-contact" method="POST" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name"/>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com"/>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="Subject"/>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Your message…"></textarea>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

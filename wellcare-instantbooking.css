@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FAF9F6;
+  color: #333;
+}
+
+.booking-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.booking-container {
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container h2 {
+  color: #004E5F;
+  margin-bottom: 0.5rem;
+}
+
+.booking-container p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #004E5F;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #007287;
+}
+
+@media (max-width: 600px) {
+  .booking-container {
+    padding: 1.5rem;
+  }
+
+  .booking-container h2 {
+    font-size: 1.5rem;
+  }
+}
+  

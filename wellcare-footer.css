@@ -1,0 +1,68 @@
+.wellcare-footer {
+    background-color: #002C33;
+    color: #B0BEC5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .footer-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem 1.5rem;
+  }
+  
+  .footer-brand h3 {
+    color: #F3D9B1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    color: #F3D9B1;
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li,
+  .footer-social li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: #B0BEC5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    color: #F3D9B1;
+  }
+  
+  .footer-contact p {
+    margin: 0.3rem 0;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #446575;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #001F2E;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #90A4AE;
+  }
+  

@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #faf9f6;
+    color: #333;
+  }
+  
+  /* Section wrapper */
+  .live-updates {
+    padding: 4rem 1rem;
+    background: #fff;
+  }
+  
+  .live-updates .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .live-updates h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #004e5f;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .live-updates h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f76c5e;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Timeline */
+  .updates-timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .updates-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 2px;
+    height: 100%;
+    background: #e6e8e6;
+  }
+  
+  .update {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .update::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #f76c5e;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #f76c5e;
+  }
+  
+  .update .time {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.3rem;
+  }
+  
+  .update p {
+    background: #f0f4f8;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .live-updates {
+      padding: 2rem 0.5rem;
+    }
+    .updates-timeline {
+      padding-left: 1.5rem;
+      margin-left: 0.5rem;
+    }
+    .update p {
+      font-size: 0.95rem;
+    }
+  }  
