@@ -1,0 +1,374 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9; /* Slightly off-white background */
+  color: #333;
+  line-height: 1.7; /* Improved default line height for better readability */
+}
+
+header {
+  background-color: #005073; /* A slightly richer, deeper blue */
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+  font-size: 2.2rem; /* Slightly larger, more prominent logo */
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem; /* Increased gap for better spacing */
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav a:hover {
+  color: #f5d090; /* A warmer, more inviting hover color */
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem; /* Larger menu icon */
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem; /* Add some padding for better touch area */
+}
+
+.menu-toggle:hover {
+  opacity: 0.8; /* Subtle opacity change on hover */
+}
+
+
+main {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #005073, #f0674d); /* A more refined gradient */
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem; /* Increased vertical padding */
+  position: relative; /* For potential overlay effects */
+  overflow: hidden;  /* to contain any potential overflowing elements */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Larger, more impactful heading */
+  margin-bottom: 1.5rem; /* Increased margin */
+  font-weight: 600; /* Use a slightly lighter font weight */
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  font-size: 1.25rem; /* Slightly larger paragraph text */
+  max-width: 700px; /* Wider max-width for better readability on larger screens */
+  margin: 0 auto 2.5rem; /* Increased bottom margin */
+  line-height: 1.8; /* Improved line height */
+  color: #f8f8f8;
+}
+
+.btn-primary {
+  padding: 1rem 2.2rem;
+  background-color: #f5d090; /* A brighter, more appealing button color */
+  border: none;
+  color: #005073;
+  font-weight: bold;
+  border-radius: 8px; /* Slightly more rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+.btn-primary:hover {
+  background-color: #edc175; /* A slightly darker shade on hover */
+  transform: scale(1.04); /* Subtler scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.btn-primary:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on active */
+}
+
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider feature cards */
+  gap: 2.5rem; /* Increased gap */
+  padding: 5rem 2rem; /* Increased padding */
+  background-color: #f4f4f4; /* A very light grey background */
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 10px; /* More rounded corners */
+  padding: 2rem; /* Increased padding */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Slightly more pronounced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.feature-card:hover {
+  transform: translateY(-8px); /* Increased translateY */
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12); /* Increased shadow on hover */
+}
+
+.feature-card h3 {
+  color: #005073;
+  margin-bottom: 0.75rem; /* Increased margin */
+  font-size: 1.5rem; /* Slightly larger heading */
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Care Gallery */
+.care-gallery {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.care-gallery h2 {
+  margin-bottom: 3rem; /* Increased margin */
+  font-size: 2.5rem; /* Larger heading */
+  color: #005073;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider gallery items */
+  gap: 2.5rem; /* Increased gap */
+  justify-items: center;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 12px; /* More rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtler shadow */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+
+.gallery-item img {
+  width: 100%;
+  height: 250px; /* slightly taller */
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+  opacity: 0.9;
+}
+
+.gallery-item p {
+  padding: 1.2rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem; /* Larger heading */
+  margin-bottom: 3rem; /* Increased margin */
+  color: #005073;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.testimonial {
+  background-color: #f8f8f8;
+  border-left: 6px solid #f0674d;
+  padding: 1.8rem; /* Increased padding */
+  margin: 1.5rem auto;
+  max-width: 750px; /* Wider testimonial box */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+  line-height: 1.8;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1.2rem; /* Increased margin */
+
+}
+
+.testimonial cite {
+  font-size: 0.95rem; /* slightly larger */
+  color: #777;
+  font-weight: 500;
+}
+
+/* Login Section */
+.login-section {
+  background-color: #f4f4f4;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.login-section h2 {
+  font-size: 2.2rem; /* Larger heading */
+  margin-bottom: 2rem;
+  color: #005073;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.login-form {
+  max-width: 450px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.2rem; /* Increased gap */
+}
+
+.login-form input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #b0bec5;
+  font-size: 1.05rem;
+  transition: border-color 0.2s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #f5d090;
+  box-shadow: 0 0 0 2px rgba(245, 208, 144, 0.2);
+}
+
+
+.login-form button {
+  padding: 1rem 2.2rem;
+  background-color: #f5d090;
+  border: none;
+  color: #005073;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.login-form button:hover {
+  background-color: #edc175;
+  transform: scale(1.04);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-form button:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CTA Section */
+.cta {
+  background-color: #005073;
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+  /* optional background image
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('your-cta-background.jpg');
+  background-size: cover;
+  background-position: center;
+  */
+}
+
+.cta h2 {
+  font-size: 2.75rem; /* Even larger heading */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.cta p {
+  font-size: 1.25rem;
+  max-width: 750px; /* Wider max-width */
+  margin: 0 auto 2.5rem; /* Increased margin */
+  line-height: 1.8;
+  color: #f8f8f8;
+}
+
+/* Footer */
+footer {
+  background-color: #00334d; /* Darker footer background */
+  color: #b0bec5;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav {
+      display: none;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+      background-color: #005073;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav.show {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .hero h1 {
+      font-size: 2.75rem; /* Slightly smaller on mobile */
+  }
+
+  .hero p {
+      font-size: 1.15rem; /* Slightly smaller on mobile */
+  }
+
+  .features {
+      grid-template-columns: 1fr;
+  }
+
+  .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller screens */
+  }
+}
