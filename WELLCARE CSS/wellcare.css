@@ -8,13 +8,20 @@ body {
   line-height: 1.7; /* Improved default line height for better readability */
 }
 
+a {
+  color: #000; /* A more vibrant blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+  background-color: transparent;
+}
+a:hover {
+  color: #fff; /* A warmer, more inviting hover color */
+}
+
 header {
   background-color: #005073; /* A slightly richer, deeper blue */
   color: #fff;
   padding: 1.2rem 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -142,6 +149,16 @@ main {
 .feature-card p {
   color: #555;
   line-height: 1.7;
+}
+
+.feature-card a {
+  display: inline-block;
+  margin-top: 1.5rem; /* Increased margin */
+  padding: 0.6rem 1.2rem; /* Increased padding */
+  background-color: #f0674d; /* A more vibrant button color */
+  color: #fff;
+  border-radius: 8px; /* More rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
 }
 
 /* Care Gallery */
@@ -370,6 +387,13 @@ footer {
 
   .gallery {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller screens */
+  }
+
+  .testDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 50%;
   }
 }
 /* Vision & Mission Section */
